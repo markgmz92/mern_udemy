@@ -1,0 +1,14 @@
+{
+  "name": "udemy_mern",
+  "version": "1.0.0",
+  "description": "Proshop app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "markgmz92 <markgmz92@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
