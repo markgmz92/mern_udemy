@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Proshop app",
   "main": "server.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "yarn --cwd ./frontend run start",
-    "dev": "concurrently -k \"yarn run server\" \"yarn run client\""
+    "client": "yarn --cwd ./client start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "author": "markgmz92 <markgmz92@gmail.com>",
   "license": "MIT",
