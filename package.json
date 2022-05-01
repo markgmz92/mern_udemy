@@ -4,7 +4,10 @@
   "description": "Proshop app",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server",
+    "client": "yarn --cwd ./frontend run start",
+    "dev": "concurrently -k \"yarn run server\" \"yarn run client\""
   },
   "author": "markgmz92 <markgmz92@gmail.com>",
   "license": "MIT",
