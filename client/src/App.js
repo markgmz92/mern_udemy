@@ -11,6 +11,7 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 import LoginScreen from './screens/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen';
 
 const App = () => {
   return (
@@ -22,7 +23,12 @@ const App = () => {
             <Route
               path='/login'
               element={<LoginScreen />}
-              render={() => <Navigate to='/' />}
+              render={() => <path to='/' />}
+            />
+            <Route
+              path='/register'
+              element={<RegisterScreen />}
+              render={() => <path to='/' />}
             />
             <Route path='/product/:id' element={<ProductScreen />} />
             <Route path='/cart/:id' element={<CartScreen />} />
