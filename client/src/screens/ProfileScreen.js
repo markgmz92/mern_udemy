@@ -30,7 +30,7 @@ const ProfileScreen = () => {
         dispatch(getUserDetails('profile'));
       } else {
         setName(user.name);
-        setEmail(user.Email);
+        setEmail(user.email);
       }
     }
   }, [dispatch, navigate, userInfo, user]);
