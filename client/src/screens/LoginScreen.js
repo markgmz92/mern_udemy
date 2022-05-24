@@ -10,7 +10,7 @@ import { login } from '../actions/userActions';
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate('/');
+  const navigate = useNavigate('');
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.userLogin);
@@ -25,6 +25,7 @@ const LoginScreen = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
+    navigate('/');
   };
 
   return (
@@ -53,7 +54,7 @@ const LoginScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button type='submit' variant='primary' onClick={submitHandler}>
           {' '}
           Sign In
         </Button>
