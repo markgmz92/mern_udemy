@@ -14,8 +14,9 @@ import {
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 
-const CartScreen = () => {
-  const navigate = useNavigate();
+const CartScreen = ({ location }) => {
+  const user = localStorage.getItem('userInfo');
+  const navigate = useNavigate('');
   const { id } = useParams();
   const qty = useLocation();
   console.log(qty);
@@ -23,6 +24,7 @@ const CartScreen = () => {
   console.log(dispatch);
 
   const cart = useSelector((state) => state.cart);
+
   const { cartItems } = cart;
   console.log(cart);
 
@@ -37,7 +39,7 @@ const CartScreen = () => {
   };
 
   const checkoutHandler = () => {
-    navigate('/login?redirect=shipping');
+    navigate('/shipping');
   };
   return (
     <Row>
