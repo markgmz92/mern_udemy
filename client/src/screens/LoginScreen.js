@@ -54,7 +54,12 @@ const LoginScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary' onClick={submitHandler}>
+        <Button
+          type='submit'
+          variant='primary'
+          disabled={email.length === 0 && password.length === 0}
+          onClick={submitHandler}
+        >
           {' '}
           Sign In
         </Button>
