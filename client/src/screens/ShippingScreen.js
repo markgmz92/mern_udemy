@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const ShippingScreen = () => {
-  return (
-    <div>ShippingScreen</div>
-  )
-}
+  return <div>This is the shipping screen</div>;
+};
 
-export default ShippingScreen
+export default ShippingScreen;
