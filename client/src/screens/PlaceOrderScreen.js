@@ -42,10 +42,11 @@ const PlaceOrderScreen = () => {
 
   useEffect(() => {
     if (success) {
-      navigate('/order/${order._id}');
+      // eslint-disable-next-line no-template-curly-in-string
+      navigate(`/order/${order._id}`);
     }
     //eslint-disable-next-line
-  }, [navigate, success]);
+  }, [navigate, success, order]);
 
   const placeOrderHandler = () => {
     dispatch(
