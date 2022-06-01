@@ -14,8 +14,7 @@ import {
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 
-const CartScreen = ({ location }) => {
-  const user = localStorage.getItem('userInfo');
+const CartScreen = () => {
   const navigate = useNavigate('');
   const { id } = useParams();
   const qty = useLocation();
