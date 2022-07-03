@@ -7,6 +7,7 @@ Features that are included in this project:
 <li>Express middleware to determine whether user is an admin</li>
 <li>API for user and for products. </li> 
 <li>Uses MongoDB as a database</li>
+<li>Redux for frontend state management</li>
 </ol>
 
 Features that are improved:
@@ -21,4 +22,5 @@ Features that will be included into the future:
 <li> Google/Facebook authentication </li>
 <li> Include integration and unit testing for both frontend/backend </li>
 <li> Integrate TypeScript for the frontend </li>
+<li> Using Redux Toolkit for frontend state management </li>
 </ol>
