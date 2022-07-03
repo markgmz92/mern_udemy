@@ -13,7 +13,7 @@ Features that are improved:
 
 <ol>
 <li>React Router V5 upgraded to React Router V6</li>
-<ol>
+</ol>
 
 Features that will be included into the future:
 
@@ -21,3 +21,4 @@ Features that will be included into the future:
 <li> Google/Facebook authentication </li>
 <li> Include integration and unit testing for both frontend/backend </li>
 <li> Integrate TypeScript for the frontend </li>
+</ol>
